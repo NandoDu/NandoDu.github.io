@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>个人博客的创建:hexo 从零开始到搭建完整</title>
+      <link href="/2020/04/09/createHexo/"/>
+      <url>/2020/04/09/createHexo/</url>
+      
+        <content type="html"><![CDATA[<p>这篇博客采用 github page 平台托管的方式，利用 hexo 作为一个快速简洁的博客框架，用它来从零搭建博客。<br><br/></p><h1 id="流程"><a href="#流程" class="headerlink" title="流程"></a><strong>流程</strong></h1><ul><li><h2 id="安装-Git"><a href="#安装-Git" class="headerlink" title="安装 Git"></a><a href="#安装Git">安装 Git</a></h2></li><li><h2 id="安装-Node-js"><a href="#安装-Node-js" class="headerlink" title="安装 Node.js"></a><a href="#安装Node.js">安装 Node.js</a></h2></li><li><h2 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a><a href="#安装Hexo">安装 Hexo</a></h2></li><li><h2 id="GitHub-创建个人仓库"><a href="#GitHub-创建个人仓库" class="headerlink" title="GitHub 创建个人仓库"></a><a href="#GitHub创建个人仓库">GitHub 创建个人仓库</a></h2></li><li><h2 id="将-hexo-部署到-GitHub"><a href="#将-hexo-部署到-GitHub" class="headerlink" title="将 hexo 部署到 GitHub"></a><a href="#将hexo部署到GitHub">将 hexo 部署到 GitHub</a></h2><br/></li></ul><h2 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a><strong>安装Git</strong></h2><p>windows : 到 <a href="https://git-scm.com/downloads" target="_blank" rel="noopener">git</a> 官网上下载, 下载后会有一个 Git Bash 的命令行工具，以后就用这个工具来使用 git。</p><h2 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a><strong>安装Node.js</strong></h2><p>windows : <a href="https://nodejs.org/en/" target="_blank" rel="noopener">nodejs</a> 选择 LTS 版本就行了。<br/><br>运行</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm -v</span><br></pre></td></tr></table></figure><p>检查是否安装成功。</p><h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a><strong>安装Hexo</strong></h2><p>npm 在使用前最好先进行<a href="https://www.jianshu.com/p/4aaf929bfa71" target="_blank" rel="noopener">换源</a>。<br/><br>打开 cmd，输入命令</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure><p>查看 hexo 是否安装成功。安装成功后，新建一个空文件夹 blog，并右键运行 Git Bash。<br/><br>在 Git Bash 中输入命令</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure><p>完成 hexo 的初始化。之后输入命令</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure><p>新建完成后，指定文件夹目录下有：</p><ul><li>node_modules: 依赖包</li><li>public：存放生成的页面</li><li>scaffolds：生成文章的一些模板</li><li>source：用来存放你的文章</li><li>themes：主题</li><li>_config.yml: 博客的配置文件</li></ul><p>输入命令</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure><p>成功时应显示</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">INFO Start processing</span><br><span class="line">INFO Hexo is running at http:&#x2F;&#x2F;localhost4000 . Press Ctrl+C to stop.</span><br></pre></td></tr></table></figure><p>在浏览器中输入地址 <a href="http://localhost4000，即可看到" target="_blank" rel="noopener">http://localhost4000，即可看到</a> hexo 为我们默认生成的博客界面。浏览后，使用 ctrl+c 退出服务。</p><h2 id="GitHub创建个人仓库"><a href="#GitHub创建个人仓库" class="headerlink" title="GitHub创建个人仓库"></a><strong>GitHub创建个人仓库</strong></h2><p>首先，你先要有一个 GitHub 账户。<br/><br>注册完登录后，在 GitHub.com 中看到一个 New repository，新建仓库<br/><br>创建一个和你用户名相同的仓库，后面加 .github.io，只有这样，将来要部署到 GitHub page 的时候，才会被识别，也就是 xxxx.github.io，其中 xxx 就是你注册 GitHub 的用户名。<br/><br>点击 create repository。</p><h2 id="将hexo部署到GitHub"><a href="#将hexo部署到GitHub" class="headerlink" title="将hexo部署到GitHub"></a><strong>将hexo部署到GitHub</strong></h2><p>安装deploy-git ，也就是部署的命令,这样你才能用命令部署到GitHub</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure><p>然后打开站点配置文件 _config.yml，翻到最后，修改为 YourgithubName，就是你的GitHub账户</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https:&#x2F;&#x2F;github.com&#x2F;YourgithubName&#x2F;YourgithubName.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure><p>然后</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure><p>其中 hexo clean 清除了你之前生成的东西。<br/><br>hexo generate 顾名思义，生成静态文章，可以用 hexo g 缩写。<br/><br>hexo deploy 部署文章，可以用 hexo d 缩写</p><p>注意 deploy 时可能要你输入 username 和 password。</p><p>无报错，则表示部署成功，过一会儿就可以在 <a href="http://yourname.github.io" target="_blank" rel="noopener">http://yourname.github.io</a> 这个网站看到你的博客了！</p><h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a><strong>结语</strong></h1><p>博客的创建到这里只是完成了小小的一步，后续的更换主题、注册域名都需要你在此教程基础上搜索相关内容进行配置，基础薄弱的人（比如我）一般需要耗费一下午甚至一晚上的时间，才能让自己的博客得以见人。我是 NandoDu，一个非技术宅，希望这篇教程可以帮到你。</p><p>资料来源：<a href="https://www.bilibili.com/video/BV1Yb411a7ty" target="_blank" rel="noopener">手把手教你从0开始搭建自己的个人博客 |无坑版视频教程| hexo</a>、<a href="https://blog.csdn.net/sinat_37781304/article/details/82729029" target="_blank" rel="noopener">hexo史上最全搭建教程</a>。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 零基础教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> 教程 </tag>
+            
+            <tag> 零基础 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/2020/04/09/hello-world/"/>
       <url>/2020/04/09/hello-world/</url>
