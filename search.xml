@@ -4,25 +4,23 @@
   
     
     <entry>
-      <title>C++常用输入代码大全</title>
-      <link href="/2020/04/13/CplusInput/"/>
-      <url>/2020/04/13/CplusInput/</url>
+      <title>从零开发微信小程序（二）</title>
+      <link href="/2020/04/16/wechat2/"/>
+      <url>/2020/04/16/wechat2/</url>
       
-        <content type="html"><![CDATA[<p>C++试题中比较头疼的是有关输入的处理，而网上对此内容的整理与介绍不适于应试，所以我整理了如下常见C++输入场景的输入代码。</p>]]></content>
+        <content type="html"><![CDATA[<p>在上一章节的介绍中，我们已经做好了开发小程序的准备，那么本章将从创建第一个页面开始，逐步讲解小程序的开发过程。</p><h2 id="创建第一个页面"><a href="#创建第一个页面" class="headerlink" title="创建第一个页面"></a><strong>创建第一个页面</strong></h2><ul><li><p>首先，创建一个存放页面的总文件夹Pages，并在其中创建第一个页面的文件夹about，在about文件夹中，新建页面所需的四个基本文件.js, .json, .wxml, .wxss.</p></li><li><p>接下来，逐一解决报错问题：</p></li></ul><ol><li>app.json不能为空，且应存放小程序各页面的路径，通过创建名为pages的字符串数组实现</li></ol><figure class="highlight html"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    "pages": ["pages/about/about"]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>&emsp;&emsp;&emsp;同理，about.json不能为空，在文件中写入{}即可。</p><ol start="2"><li>about.js中注册about页面对象</li></ol><figure class="highlight html"><table><tr><td class="code"><pre><span class="line">Page(&#123;&#125;)</span><br></pre></td></tr></table></figure><ul><li>至此，第一个页面创建成功，预览界面显示刚创建的空白页面</li></ul><blockquote><p>如果此时仍然报错，可能是微信开发者工具的问题，重启开发者工具，即可解决该问题。</p></blockquote><h2 id="配置页面"><a href="#配置页面" class="headerlink" title="配置页面"></a><strong>配置页面</strong></h2><ul><li>添加页面标题</li></ul><p>页面标题的配置在.json文件中，打开about.json文件</p><figure class="highlight html"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    "navigationBarTitleText": "此处添入标题名称",</span><br><span class="line">    "navigationBarBackgroundColor": "#fff",  // 此处添入颜色十六进制代码</span><br><span class="line">    "navigationBarTextStyle": "black"  // 此处添入标题样式 </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
       
       
       <categories>
           
-          <category> 课程笔记 </category>
+          <category> 小程序开发 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 课程笔记 </tag>
-            
-            <tag> 编程 </tag>
+            <tag> wechat </tag>
             
         </tags>
       
