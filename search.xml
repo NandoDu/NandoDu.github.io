@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>iDo-wechat</title>
+      <link href="/2020/04/18/iDo-wechat/"/>
+      <url>/2020/04/18/iDo-wechat/</url>
+      
+        <content type="html"><![CDATA[<h1 id="iDo-微信小程序介绍文档"><a href="#iDo-微信小程序介绍文档" class="headerlink" title="iDo 微信小程序介绍文档"></a><strong>iDo 微信小程序介绍文档</strong></h1><h2 id="项目背景"><a href="#项目背景" class="headerlink" title="项目背景"></a>项目背景</h2><p>&emsp;&emsp;进入大学，面对丰富多彩的大学生活，很多同学往往因为突然涌来的大量信息，或是缺少途径了解适合自己的信息，时常会感到茫然。不知道自己从何入手，不知道如何规划自己的大学生活。陷入明明有很多事情可做，却因目标不明确或盲目选择等等原因而贻误了大学学习的宝贵时光。</p><h2 id="项目理念"><a href="#项目理念" class="headerlink" title="项目理念"></a>项目理念</h2><p>&emsp;&emsp;该项目旨在通过提供用户多种可选择的学习目标，帮助用户确立本科期间的长远目标，以及为达到长远目标帮助规划可由用户自主选择的短期目标，并根据设定的目标提供精准的信息，从一本书、一份资料、一场竞赛……开始，及时提醒用户完成一个又一个的短期任务，陪伴用户以梦为马，不负韶华。</p><h2 id="项目定位"><a href="#项目定位" class="headerlink" title="项目定位"></a>项目定位</h2><p>&emsp;&emsp;为大学生更好地完成学业或进一步深造提供强有力的信息支持与目标引领（陪跑小程序）。</p><h3 id="目标人群"><a href="#目标人群" class="headerlink" title="目标人群"></a>目标人群</h3><p>&emsp;&emsp;本科生。</p><h2 id="程序界面"><a href="#程序界面" class="headerlink" title="程序界面"></a>程序界面</h2><h3 id="初始登录授权界面"><a href="#初始登录授权界面" class="headerlink" title="初始登录授权界面"></a>初始登录授权界面</h3><p>&emsp;<img src="/img/loading.gif" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/icimence/CDN/wechat/login.png"  height=400px title="初始登录授权界面" ></p><h3 id="我的”界面设计"><a href="#我的”界面设计" class="headerlink" title="我的”界面设计"></a>我的”界面设计</h3><p>&emsp;<img src="/img/loading.gif" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/icimence/CDN/wechat/mine.png"  height=400px title="“我的”界面设计" ></p><h3 id="进行中”界面设计"><a href="#进行中”界面设计" class="headerlink" title="进行中”界面设计"></a>进行中”界面设计</h3><p>&emsp;<img src="/img/loading.gif" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/icimence/CDN/wechat/running.png"  height=400px title="“进行中”界面设计"></p><h3 id="推荐”界面设计"><a href="#推荐”界面设计" class="headerlink" title="推荐”界面设计"></a>推荐”界面设计</h3><p>&emsp;<img src="/img/loading.gif" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/icimence/CDN/wechat/home.png"  height=400px title="“推荐”界面设计"></p><blockquote><p>p1: 初始登录授权界面；p2: “我的”界面设计；p3: “进行中”界面设计；p4: “推荐”界面设计</p></blockquote><h2 id="使用说明"><a href="#使用说明" class="headerlink" title="使用说明"></a>使用说明</h2><h3 id="新用户登录"><a href="#新用户登录" class="headerlink" title="新用户登录"></a>新用户登录</h3><ul><li><p>新用户登录显示p1，即初始登录授权界面，开始画面可采用打字机效果，图片中文字仅供参考；</p></li><li><p>登录授权后，进入新人引导阶段（图片未展示），新人引导会向新用户介绍小程序的核心功能：目标制定、信息获取、任务提醒，并引导新用户进入“我的”界面进行目标设定；</p></li><li><p>进入“我的”界面后，初始状态仅显示“添加目标专业”（图片未展示），添加目标专业后（可多选），“我的”界面如p2所示；</p></li><li><p>余下使用说明见“老用户使用”</p></li></ul><h3 id="老用户使用"><a href="#老用户使用" class="headerlink" title="老用户使用"></a>老用户使用</h3><ul><li><p>打开“我的”界面修改当前目标（此步骤可跳过）；</p></li><li><p>打开“推荐”界面，可看到更新的推荐信息，推荐信息由用户制定的目标决定；</p></li><li><p>浏览推荐信息，收藏感兴趣以及对自己有帮助的条目（可在“我的”界面查看）；</p></li><li><p>打开“进行中”界面，添加新任务（“我的”界面紧急任务栏随之更新）</p></li></ul><h2 id="功能描述"><a href="#功能描述" class="headerlink" title="功能描述"></a>功能描述</h2><ul><li><p>显示用户使用小程序天数</p></li><li><p>新建/修改目标专业</p></li><li><p>推荐专业相关信息</p></li><li><p>推荐信息分类</p></li><li><p>推荐信息可收藏</p></li><li><p>收藏栏可显示/新建分组</p></li><li><p>新建/完成/搁置/删除任务</p></li><li><p>任务栏分组显示</p></li><li><p>任务栏可新建/删除分组</p></li><li><p>统计板显示完成/搁置/删除数目</p></li><li><p>紧急任务栏显示/修改截止日期最近的任务</p></li><li><p>支持问题反馈</p></li></ul><h2 id="更新记录"><a href="#更新记录" class="headerlink" title="更新记录"></a>更新记录</h2><ul><li><p>2020/04/16 20:00  <strong>V1.2</strong> 小程序改版，增加更新记录，提供版本号记录。更新用户界面图片加载。</p></li><li><p>2020/04/16 20:36 <strong>V1.2.1</strong> 优化文档结构。</p></li><li><p>2020/04/17 18:43 <strong>V1.2.2</strong> 优化项目理念文字描述。</p></li><li><p>2020/04/17 22:14 <strong>V1.2.3</strong> 优化项目理念文字描述。</p></li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>从零开发微信小程序（二）</title>
       <link href="/2020/04/16/wechat2/"/>
       <url>/2020/04/16/wechat2/</url>
